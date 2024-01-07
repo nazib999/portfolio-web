@@ -1,0 +1,40 @@
+.menu{
+    background: rgb(89, 89, 109);
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    right: -300px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    transition: all 1s ease;
+
+
+    ul{
+       width: 60%;
+        
+        li{
+        margin-bottom: 10px;
+
+         a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            font-weight: 300;
+
+            &:hover{
+                font-weight: 600;
+             }
+         }
+         
+        }
+    }
+    &.active{
+        right: 0px;
+    }
+}
