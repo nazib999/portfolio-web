@@ -54,7 +54,7 @@ const Works = () => {
             </div>
           </div>
           <div className="right">
-            <img src={banner} alt="" />
+            <img src='https://cdn.dribbble.com/users/4778017/screenshots/17493828/media/65d35f64560c90ed197938c351d68298.jpg?resize=450x338&vertical=center' alt="" />
           </div>
         </div>
        

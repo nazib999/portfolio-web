@@ -8,27 +8,27 @@ const data=[
   {
     id:1,
     icon:mobile,
-    title:"jefoe neifoeuf uefhe",
+    title:"Designer",
     des:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore dicta enim nisi consequuntur inventore, quam hic deserunt tenetur numquam!',
-    img:banner,
+    img:'https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=600',
     name:'alex'
   },
   {
     id:2,
     featured:true,
     icon:mobile,
-    title:"second neifoeuf uefhe",
+    title:"Developer",
     des:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore dicta enim nisi consequuntur inventore, quam hic deserunt tenetur numquam!',
-    img:banner,
-    name:'fles'
+    img:'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name:'minan'
   },
   {
     id:2,
     icon:mobile,
-    title:"third neifoeuf uefhe",
+    title:"Content creator",
     des:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore dicta enim nisi consequuntur inventore, quam hic deserunt tenetur numquam!',
-    img:banner,
-    name:'nazib'
+    img:'https://images.pexels.com/photos/1080213/pexels-photo-1080213.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name:'jhon'
   },
 ]
 

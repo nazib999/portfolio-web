@@ -45,7 +45,10 @@
                 outline: none;
                 border-radius: 10px;
                 border: 0;
-                
+                @include mobile {
+                    width: 100%;
+                    
+                  }
 
             }
             textarea{
@@ -56,6 +59,10 @@
                 outline: none;
                 border: 0;
                 border-radius: 10px;
+                @include mobile {
+                    width: 100%;
+                    
+                  }
                
                 
             }
