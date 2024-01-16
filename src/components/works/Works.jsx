@@ -8,7 +8,7 @@ const data=[
   {
     id:1,
     icon:mobile,
-    title:"jefoe neifoeuf uefhe",
+    title:"the tittle",
     des:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore dicta enim nisi consequuntur inventore, quam hic deserunt tenetur numquam!',
     img:banner,
     name:'alex'
