@@ -10,7 +10,7 @@ const data=[
     icon:mobile,
     title:"Designer",
     des:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolore dicta enim nisi consequuntur inventore, quam hic deserunt tenetur numquam!',
-    img:'https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=600',
+    img:'https://cdn.dribbble.com/userupload/3635222/file/original-b7b5c68d5e0db9aaac74b96061457807.jpg?resize=400x300&vertical=center',
     name:'alex'
   },
   {
