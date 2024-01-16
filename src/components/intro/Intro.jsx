@@ -1,12 +1,14 @@
 import React from 'react'
 import './Intro.scss'
+import img from '../../images/man.png'
+import down from '../../images/down.png'
 
 const Intro = () => {
   return (
     <div className='intro' id='intro'>
         <div className="left">
             <div className="imgContainer">
-                <img src="assets/man.png" alt="" />
+                <img src={img} alt="" />
             </div>
 
         </div>
@@ -17,7 +19,7 @@ const Intro = () => {
                 <h3>Freelancer <span></span></h3>
             </div>
             <a href="#portfolio">
-                <img src="assets/down.png" alt="" />
+                <img src={down} alt="" />
             </a>
         </div>
     </div>

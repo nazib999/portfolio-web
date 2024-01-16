@@ -1,10 +1,19 @@
+@import '../../global.scss';
 .intro {
   display: flex;
   background: rgba(186, 156, 196, 0.3);
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.5;
     overflow: hidden;
+    @include mobile{
+    
+      flex: .6;
+    }
 
     .imgContainer {
       width: 700px;
@@ -15,16 +24,26 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
+      @include mobile{
+        
+        width: 500px;height: 500px;
+      }
 
       img {
         height: 90%;
+        @include mobile{
+          
+        }
       }
     }
   }
   .right {
-    flex: 0.5;
+    flex: 0.4;
  
     position: relative;
+    @include mobile{
+      flex:.4;
+    }
 
     .wrapper {
       width: 100%;
@@ -35,22 +54,31 @@
       flex-direction: column;
       justify-content: center;
       margin: 0;
+      @include mobile{
+       padding-left: 0;
+      }
      
 
       h2{
         margin: 0px;
+        font-size: 25px;
       }
       h1{
         margin: 10px 0;
+        font-size: 35px;
       }
       h3{
         margin: 0;
+        font-size: 20px;
       }
     }
     a{
         position: absolute;
         bottom: 30px;
         left: 40%;
+        @include mobile{
+          bottom: 10px;
+        }
         
 
 

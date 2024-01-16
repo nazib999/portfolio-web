@@ -1,12 +1,21 @@
+@import '../../global.scss';
 .contact{
     background: rgba(54, 183, 147, 0.1);
     display: flex;
+    @include mobile{
+        flex-direction: column;
+       justify-content: center;
+      }
 
     .left{
         flex: 1;
         overflow: hidden;
+        
         img{
             height: 100%;
+            @include mobile{
+                height: auto;
+              }
         }
     }
     .right{

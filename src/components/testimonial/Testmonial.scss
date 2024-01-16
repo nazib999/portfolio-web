@@ -1,3 +1,4 @@
+@import '../../global.scss';
 .testmonial{
     background: rgba(191, 35, 225, 0.37);
     display: flex;
@@ -8,6 +9,9 @@
         margin-top: 20px;
         font-size: 40px;
         color: white;
+        @include mobile{
+            margin-bottom: 10px;
+          }
     }
 
     .container{
@@ -16,9 +20,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mobile{
+            flex-direction: column;
+            height: 100%;
+            
+            
+          }
 
         .card{
-            width: 350px;
+            width: 300px;
             height: 70%;
             border-radius: 10px;
             box-shadow: 0 0 15px -8px black;
@@ -26,8 +36,28 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            transition: transform .5s ease;
-            background: rgb(227, 213, 213);
+            transition: transform 1s ease;
+            background: rgb(239, 234, 234);
+            cursor: pointer;
+            @include mobile{
+               margin-bottom: 15px;
+               height: 220px;
+               width: 90%;
+               &:nth-child(2){
+                margin-bottom: 0;
+               }
+               
+              }
+
+            &.featured{
+                width: 350px;height: 75%;
+                margin: 0 30px;
+                @include mobile{
+                    height: 260px;
+                    margin-bottom: 15px;
+                    width: 90%;
+                  }
+            }
 
             &:hover{
                 transform: scale(1.1);
