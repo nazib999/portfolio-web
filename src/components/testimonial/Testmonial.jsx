@@ -1,6 +1,6 @@
 import React from 'react'
 import './Testmonial.scss'
-import banner from '../../images/banner.png'
+
 import mobile from '../../images/mobile.png'
 import arrow from '../../images/right-arrow.png'
 
