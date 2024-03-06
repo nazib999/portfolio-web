@@ -1,8 +1,8 @@
-@import '../../global.scss';
+@import "../../global.scss";
 .intro {
   display: flex;
   background: rgba(186, 156, 196, 0.3);
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     align-items: center;
   }
@@ -10,88 +10,85 @@
   .left {
     flex: 0.5;
     overflow: hidden;
-    @include mobile{
-    
-      flex: .6;
+    @include mobile {
+      flex: 0.6;
     }
 
     .imgContainer {
       width: 700px;
       height: 700px;
-      background: crimson;
+      background: #96a3ff;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
-      @include mobile{
-        
-        width: 500px;height: 500px;
+      @include mobile {
+        width: 500px;
+        height: 500px;
       }
 
       img {
         height: 90%;
-        @include mobile{
-          
+        @include mobile {
         }
       }
     }
   }
   .right {
     flex: 0.4;
- 
+
     position: relative;
-    @include mobile{
-      flex:.4;
+    @include mobile {
+      flex: 0.4;
     }
 
     .wrapper {
       width: 100%;
       padding: 0;
       height: 100%;
-      padding-left: 50px;
+      padding-left: 70px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin: 0;
-      @include mobile{
-       padding-left: 0;
+      @include mobile {
+        padding-left: 0;
       }
-     
 
-      h2{
+      h2 {
         margin: 0px;
         font-size: 25px;
+        font-weight: 400;
       }
-      h1{
+      h1 {
         margin: 10px 0;
         font-size: 35px;
+        font-weight: 500;
       }
-      h3{
+      h3 {
         margin: 0;
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: 400;
       }
     }
-    a{
-        position: absolute;
-        bottom: 30px;
-        left: 40%;
-        @include mobile{
-          bottom: 10px;
-        }
-        
+    a {
+      position: absolute;
+      bottom: 30px;
+      left: 40%;
+      @include mobile {
+        bottom: 10px;
+      }
 
-
-        
-        img{
-            width: 35px;
-            animation: blink 1s infinite;
+      img {
+        width: 35px;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        100% {
+          opacity: 0;
         }
-        @keyframes blink {
-            100%{
-                opacity: 0;
-            }
-        }
+      }
     }
   }
 }

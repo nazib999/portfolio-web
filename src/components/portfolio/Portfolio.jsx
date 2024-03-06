@@ -3,6 +3,8 @@ import './Portfolio.scss'
 import PortfolioList from '../portfoliolist/PortfolioList'
 import { webPortfolio,featuredPortfolio,mobilePortfolio,designPortfolio,contentPortfolio } from '../../Data'
 import { useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const list =[
     {
@@ -65,7 +67,7 @@ const Portfolio = () => {
     <div className="container">
         {data.map((it)=><div className="item">
             <img src={it.img} alt="" />
-            <span>{it.title}</span>
+            <a href={it.title}><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
         </div>)}
         
        

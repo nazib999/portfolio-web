@@ -1,85 +1,74 @@
-@import '../../global.scss';
-.portfolio{
-    background: rgba(10, 45, 11, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    padding-top: 50px;
-    h1{
-        margin-bottom: 20px;
-    }
+@import "../../global.scss";
+.portfolio {
+  background: rgba(10, 45, 11, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding-top: 50px;
+  h1 {
+    margin-bottom: 20px;
+  }
 
-    ul{
+  ul {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     margin-top: 10px;
-    @include mobile{
-        flex-wrap: wrap;
-        
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+  .container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include mobile {
+      width: 100%;
+    }
+
+    .item {
+      width: 220px;
+      height: 180px;
+      border-radius: 10px;
+      margin: 10px 20px;
+      position: relative;
+      border: 1px solid lightgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      @include mobile {
+        width: 130px;
+        height: 120px;
       }
-    
-        
 
-    }
-    .container{
-        width: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        @include mobile{
-            width: 100%;
-          }
-        
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        transition: all 0.5s ease;
+      }
+      a {
+        position: absolute;
+        padding: 5px;
+        color: #fff;
+        background: rgba(100, 100, 100, 0.2);
+        border-radius: 5px;
+        font-size: 18px;
+      }
+      &:hover {
+        background-color: navy;
 
-        .item{
-            width: 220px;
-            height: 180px;
-            border-radius: 10px;
-            margin: 10px 20px;
-            position: relative;
-            border: 1px solid lightgray;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            cursor: pointer;
-            @include mobile{
-                width: 130px;
-                height: 120px;
-              }
-            
-            
-           
-
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: 1;
-                transition: all .5s ease;
-           
-            }
-            span{
-                position: absolute;
-                padding: 5px;
-                background: rgba(100,100,100,.2);
-                border-radius: 5px;
-                font-size: 18px;
-                
-            }
-            &:hover{
-                background-color: navy;
-
-                  img{
-                    z-index: 0;
-                    opacity: .4;
-                    
-                 }
-            }
-            
+        img {
+          z-index: 0;
+          opacity: 0.4;
         }
+      }
     }
+  }
 }
